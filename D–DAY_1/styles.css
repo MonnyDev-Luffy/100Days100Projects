@@ -1,0 +1,106 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 82vh;
+  background-image: url("assets/images/Background.gif");
+  background-size: cover;
+  font-family: Consolas, monospace;
+}
+
+.container {
+  background: #333333;
+  border-radius: 5px;
+  box-shadow: 15px 15px 10px rgba(54, 51, 51, 0.685);
+  width: 30%;
+  height: 20%;
+}
+
+.terminal {
+  background: #0a0a0a;
+  border-radius: 5px;
+  border: 1px solid rgb(255, 255, 255);
+}
+
+.terminal-header {
+  background: #2e2e2e;
+  padding: 5px;
+  border-radius: 5px 5px 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+}
+
+.buttons {
+  display: flex;
+}
+
+.button {
+  width: 16px;
+  height: 16px;
+  background: #e25c2c;
+  margin-left: 5px;
+  border-radius: 35%;
+  display: flex;
+  justify-content: center;
+}
+
+.terminal-body {
+  padding: 10px;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Cursor tipo bloque */
+.terminal-body::after {
+  content: "";
+  animation: blink-caret 0.7s infinite;
+}
+
+@keyframes blink-caret {
+  0%, 100% { border-color: transparent; }
+  50% { border-color: #ffffff; }
+}
+
+.code-container {
+  text-align: left;
+  color: #ffffff;
+  font-size: 18px;
+  font-family: monospace;
+  padding: 10px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+pre {
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+  animation: typing 5s steps(100) forwards, blink 0.5s ;
+}
+
+#cursor-c, #cursor-java, #cursor-js, #cursor-python {
+  animation: blink 0.5s infinite;
+}
+
+@keyframes typing {
+  to {
+      width: 100%;
+  }
+}
+
+@keyframes blink {
+  10%, 100% {
+      opacity: 1;
+  }
+  50% {
+      opacity: 0;
+  }
+}
