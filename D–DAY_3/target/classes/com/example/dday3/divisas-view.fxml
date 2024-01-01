@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+
+<Pane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dday3.DivisasController">
+
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: #897AB0;">
+         <children>
+            <Label alignment="CENTER" contentDisplay="BOTTOM" layoutX="131.0" layoutY="21.0" prefHeight="102.0" prefWidth="337.0" text="【 𝐂𝐨𝐧𝐯𝐞𝐫𝐬𝐨𝐫 𝐝𝐞 𝐝𝐢𝐯𝐢𝐬𝐚𝐬 】">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Label>
+            <ComboBox   fx:id="comboBoxMonedas" layoutX="121.0" layoutY="145.0" prefWidth="150.0" promptText="Divisa" style="-fx-background-color: #ECDBFF;" />
+            <ComboBox   fx:id="comboBoxMonedass" layoutX="121.0" layoutY="218.0" prefWidth="150.0" promptText="Divisa" style="-fx-background-color: #ECDBFF;" />
+            <TextField  fx:id="entrada" layoutX="319.0" layoutY="145.0" />
+            <TextField  fx:id="salida" layoutX="319.0" layoutY="218.0" />
+            <Button onAction="#limpiarTexto" layoutX="188.0" layoutY="290.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="83.0" style="-fx-background-color: #BCC7CF;" text="𝙲𝚕𝚎𝚊𝚗" />
+            <Button onAction="#convertirTexto" layoutX="319.0" layoutY="291.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="83.0" style="-fx-background-color: #D4DFE7;" text="𝙲𝚘𝚗𝚟𝚎𝚛𝚝𝚎𝚛" />
+         </children></AnchorPane>
+
+</Pane>
