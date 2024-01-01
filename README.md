@@ -46,7 +46,7 @@ done
 |----|---------------------------------|--------|
 |  1  | Hello World!                     |    ✅   |
 |  2  | Business card                   |    ✅   |
-|  3  | Currency calculator             |      |
+|  3  | Currency calculator             |    ✅  |
 |  4  | Binary and decimal converter    |       |
 |  5  | Calculadora de propinas         |       |
 |  6  | Calculadora científica          |        |
