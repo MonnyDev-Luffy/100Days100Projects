@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+
+<VBox id = "principal" prefHeight = "248.0" prefWidth = "615.0" xmlns = "http://javafx.com/javafx/8" xmlns:fx = "http://javafx.com/fxml/1" fx:controller = "com.example.dday4.Controller">
+
+   <children>
+      <Pane id = "pane" prefHeight = "268.0" prefWidth = "615.0">
+
+         <children>
+            <TextField id = "textone" fx:id = "val1" layoutX = "120.0" layoutY = "68.0" prefHeight = "38.0" prefWidth = "100.0" promptText = "Result"/>
+            <TextField fx:id = "val2" layoutX = "245.0" layoutY = "68.0" prefHeight = "38.0" prefWidth = "182.0" promptText = "Result"/>
+            <Button fx:id = "Copy2" layoutX = "440.0" layoutY = "68.0" mnemonicParsing = "false" onAction = "#copy2" prefHeight = "38.0" prefWidth = "63.0" text = "𝙲𝚘𝚙𝚢"/>
+            <Button id = "clean" fx:id = "clean" layoutX = "262.0" layoutY = "154.0" mnemonicParsing = "false" onAction = "#clean" prefHeight = "46.0" prefWidth = "99.0" text = "𝐂𝐋𝐄𝐀𝐍"/>
+         </children>
+
+      </Pane>
+   </children>
+
+</VBox>

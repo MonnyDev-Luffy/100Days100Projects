@@ -1,0 +1,37 @@
+.button{
+    -fx-background-color: #4C3DA6;
+    -fx-text-fill: WHITE;
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+}
+
+.button#clean{
+    -fx-background-color: #2B0A57;
+    -fx-text-fill: WHITE;
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+}
+
+.button:hover{
+    -fx-background-color: #5F4CC0;
+}
+
+.button#clean:hover{
+    -fx-background-color: #352154;
+}
+
+.text-field{
+    -fx-shape: "M5.5 0 L100.5 0 C102.1569 0 103.5 1.3431458 103.5 3 L103.5 27 C103.5 28.656854 102.1569 30 100.5 30 L5.5 30 C3.8431458 30 2.5 28.656854 2.5 27 L2.5 3 C2.5 1.3431458 3.8431458 0 5.5 0 Z";
+    -fx-background-color: #ABABCB;
+}
+
+.text-field:hover{
+    -fx-background-color: #C4C4C4;
+}
+
+#pane{
+    -fx-background-image: url('images/background.jpg');
+    -fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
